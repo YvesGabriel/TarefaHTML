@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login ITAjr</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
+    <style>
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: 'Raleway', sans-serif; /*muda a fonte*/
+        background: #26b054; /*cor de fundo*/
+        color: #fff;  /*cor das palavras em baixo*/
+        line-height: 1.8; /*distancia entre caixas*/
+      }
+      #container { /*define o tamanho do container*/
+        margin: 30px auto;
+        max-width: 400px;
+        padding:20px;
+      }
+      .form-wrap{
+          background: #fff; /*define a cor de fundo*/
+          padding: 15px 25px; /*define o tamanho da caixa de perguntas*/
+          color: #333; /*define a cor da letra*/
+      }
+      .form-wrap h1{
+       text-align: center;
+      }
+      .form-wrap .form-group label {
+       display: block; /*ajusta a posicão da pergunta*/
+       color: #666;
+      }
+      .form-wrap .form-group input {
+       width: 100%;
+       padding: 10px;
+       border: #ddd 2px solid;
+       border-radius: 50px;
+      }
+      .form-wrap  button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background: #454b49;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 50px;
+      }
+      .form-wrap button:hover {
+        background: #2f2d2d; 
+      }
+      .form-wrap .bottom-text {
+        font-size: 13px;
+        margin-top: 20px;
+      } 
+      
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="form-wrap">
+            <h1>Login</h1>
+            <form action="saves.php">
+                <div class="form-group">
+                    <label for="Email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="Senha">Senha:</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+                <button type="submit" class="button">Login</button>
+                <button type="submit" class="button2">Cadastrar</button>
+            </form>
+        </div>      
+    </div>
+</body>
+</html>
